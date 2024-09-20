@@ -1,0 +1,65 @@
+@import url("global.css");
+
+.brand {
+    font-family: 'Playfair Display', serif;
+    color: var(--yellow);
+    margin-bottom: 50px;
+    margin-top: 30vh;
+    font-size: 5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background-color: rgba(0, 0, 0, 0.36); /* Adjust the color and opacity */
+    z-index: -1;
+}
+.bg_video {
+    /* display:flex; */
+    /* justify-content:center; */
+    text-align:center;
+
+}
+
+.bg_video > video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+
+}
+
+p, svg {
+    font-size: 2rem;
+    color: white;
+}
+
+p:hover, svg:hover {
+    /* font-size: 2rem; */
+    color: var(--fuschia);
+    fill: var(--fuschia);
+}
+
+/* button {
+    padding: 15px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--yellow);
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--fuschia);
+    box-shadow: -1px 3px 27px 13px rgba(255,204,0,0.91);
+    -webkit-box-shadow: -1px 3px 27px 13px rgba(255,204,0,0.91);
+    -moz-box-shadow: -1px 3px 27px 13px rgba(255,204,0,0.91);
+} */

@@ -1,0 +1,23 @@
+@import url("global.css");
+
+
+main {
+    background: "Gallery";
+    font-size: 3rem;
+    z-index: -1;
+}
+.cards {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    /* gap: 2rem; */
+    margin: 3rem;
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+}
+
+.card > img {
+    width: 300px;
+    /* min-width: 100%; */
+}
+

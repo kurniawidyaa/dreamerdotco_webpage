@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resize Intersection Excercise</title>
+        <style>
+            .container {
+                display:flex;
+                gap: 1rem;
+            }
+            .box {
+                width:15rem;
+                height: 15rem;
+                background-color: red;
+            }
+            .text {
+                width:15rem;
+                height: 15rem;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="text" contentEditable>Text</div>
+        </div>
+
+        <script>
+            const box = document.querySelector(".box");
+            const container = document.querySelector(".container");
+
+            const observer = new ResizeObserver((entries) => {
+                const boxElement = entries[0];
+                const isSmall = boxElement.contentRect.width < 150
+
+                boxElement.target.style.backgroundColor = isSmall ? "blue" : "red"
+            })
+
+            observer.observe(box)
+            // observer.observe(container)
+        </script>
+    </body>
+</html>
