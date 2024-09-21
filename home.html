@@ -13,18 +13,19 @@
         <title>Kurnia's Website</title>
     </head>
     <body>
+        <!-- NAVBAR -->
         <nav>
             <div class="navbar">
-                <!-- logo -->
+            <!-- LOGO -->
              <img class="logo" alt="Dreamer.co logo" src="images/logo_pink.png">
-             <!-- list of navbar -->
+             <!-- LIST OF NAVBAR -->
             <ul class="nav_list">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="products.html">Products</a></li>
                 <!-- <li><a href="#">Blog</a></li> -->
             </ul>
-            <!-- search button -->
+            <!-- SEARCH BUTTON -->
             <!-- <input type="text" name="search" placeholder="Search.."> -->
             <div class="wrapper">
                 <div class="search">
@@ -36,7 +37,10 @@
                 </div>
             </div>
         </nav>
+
+        <!-- MAIN -->
         <main>
+            <!-- HERO SECTION -->
             <section class="hero">
                 <div>
                     <h6 class="animation_left">MADE <br> WITH LOVE</h6>
@@ -45,14 +49,13 @@
                 <p class="animation_left">THAT MAKES YOU</p>
                 <p class="animation_right">HAPPY</p>
             </section>
+            <!-- CARD -->
             <section class="main">
                 <div class="grid animation_left">
                     <div class="parent_card">
                         <div class="flower_card">
                             <div id="f_animation" onClick="toCatalog()">
-                                <span class="material-symbols-outlined">
-                                    deceased
-                                    </span>
+                                <span class="material-symbols-outlined">deceased</span>
                             </div>
                             <p class="playfair" >To Catalog <span class="material-symbols-outlined arrow">
                                 arrow_right_alt
@@ -60,38 +63,17 @@
                         </div>
                     </div>
                     <div class="parent_card">
-                          <!-- <p class="vertical">New Collection!</p> -->
-                          <!-- <svg height="200" width="300" style="position: relative; z-index:2; top: 0; left: 0; margin: 0;">
-                            <path id="lineAC" d="M 30 180 q 90 -250 400 30" fill="none"/>
-                            <text style="font-size:20px;">
-                              <textPath href="#lineAC" startOffset="10">NEW COLLECTION!</textPath>
-                            </text>
-                          </svg> -->
                         <div class="flower_card">
-                            <!-- <svg width="300" height="400" style="position: absolute; top: 0; left: 0; margin: 0;">
-                                <path id="half-circle" d="M 18,90 A 70,80 0 0,1 196,60" fill="transparent" />
-                                <text>
-                                  <textPath href="#half-circle">NEW COLLECTION!</textPath>
-                                </text>
-                              </svg> -->
-                               <!-- <svg viewBox="0 0 500 500">
-                            <path id="curve" fill="transparent" style="position:absolute; top: 0; left: 0; margin: 0;"" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-                            <text width="600" id="curve_text">
-                              <textPath xlink:href="#curve">
-                                    NEW COLLECTION
-                              </textPath>
-                            </text>
-                          </svg> -->
                         </div>
-                        <p class="playfair">Roses</p>
+                        <p class="playfair">Hand Bouquet</p>
                     </div>
                     <div class="parent_card">
                         <div class="flower_card"></div>
-                        <p class="playfair">Peony</p>
+                        <p class="playfair">Artificial Flowers</p>
                     </div>
-                    <!-- <div class="flower_card" id="fCard_4"><img src="" alt=""></div> -->
                 </div>
             </section>
+            <!-- ABOUT US -->
             <div class="about animation_right">
                 <div class="about_left">
                     <h3>ABOUT</h3>
@@ -101,14 +83,19 @@
                 </div>
                 <div class="about_right">
                     <div class="about_img">
-                        <img alt="about_bouquet" src="../images/bq_2.jpg">
+                        <!-- <img alt="about_bouquet" src="../images/bq_2.jpg"> -->
+                         <video autoplay muted loop>
+                            <source src="../videos/table_decor.mp4" type="video/mp4">
+                         </video>
                     </div>
                 </div>
             </div>
         </main>
+
+        <!-- FOOTER -->
         <footer>
-            <!-- footer contain -->
-            <div class="footer_contain">
+            <!-- FOOTER CONTENT -->
+            <div class="footer_content">
                 <div class="operation_time">
                     <h6 class="footer_title">Operation Time</h6>
                     <ul>
@@ -122,7 +109,7 @@
                     <ul>
                         <!-- <li>Setneg, Palem kuning 2 Street</li> -->
                         <li>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1691447884673!2d106.6842859739902!3d-6.241425993746875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa37e8e3f3af%3A0xf955ac3327516891!2sJl.%20Palem%20Kuning%202%20Blok%20E%20No.21%2C%20Pd.%20Kacang%20Bar.%2C%20Kec.%20Pd.%20Aren%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015226!5e0!3m2!1sen!2sid!4v1726116032680!5m2!1sen!2sid" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1691447884673!2d106.6842859739902!3d-6.241425993746875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fa37e8e3f3af%3A0xf955ac3327516891!2sJl.%20Palem%20Kuning%202%20Blok%20E%20No.21%2C%20Pd.%20Kacang%20Bar.%2C%20Kec.%20Pd.%20Aren%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015226!5e0!3m2!1sen!2sid!4v1726116032680!5m2!1sen!2sid" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +122,7 @@
                     </ul>
                 </div>
             </div>
-            <!-- copyright -->
+            <!-- COPYRIGHT -->
              <div class="copyright">
                 <p>Copyright &copy; 2024 Dreamer.co | All Right Reserved</p>
              </div>
@@ -146,7 +133,7 @@
          <script>
             window.onscroll = function(ev) {
                 if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
-                    location.href = 'opening.html';
+                    location.href = 'index.html';
                 }
             };
          </script>

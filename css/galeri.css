@@ -1,23 +1,63 @@
 @import url("global.css");
 
-
-main {
-    background: "Gallery";
-    font-size: 3rem;
-    z-index: -1;
+.gallery {
+    width: 900px;
+    display:flex;
+    overflow-x: scroll;
 }
-.cards {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
-    /* gap: 2rem; */
-    margin: 3rem;
+.gallery div {
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img {
+    width: 100%;
+    filter:grayscale(100%);
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+.gallery_wrap {
     display: flex;
-    overflow: hidden;
-    width: 300px;
+    align-items: center;
+    justify-content:center;
+    z-index: 2;
 }
 
-.card > img {
-    width: 300px;
-    /* min-width: 100%; */
+#prev, #next {
+    cursor: pointer;
+    margin: 40px;
 }
 
+.gallery div img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+#prev .material-symbols-outlined, #next .material-symbols-outlined {
+    font-size: 40px;
+    color: var(--fuschia);
+}
+#prev .material-symbols-outlined:hover, #next .material-symbols-outlined:hover {
+    color: var(--green);
+}
+
+.gallery_title {
+    font-size: 15vw;
+    /* font-size: 10rem; */
+    text-shadow: 5px 0.35em var(--yellow);
+    /* writing-mode: vertical-lr; */
+    z-index: 1;
+}
+
+.container {
+    text-align: center;
+    margin: 5% auto;
+}
